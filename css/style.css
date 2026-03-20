@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p, a, li, .heading, .logo-text, .button, input, textarea {
+    font-size: 22px;
+    text-wrap: wrap;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+input {
+    font-family: inherit;
+}
+
+textarea {
+    padding: 12px 15px;
+    font-family: inherit;
+}
+
+/* кнопочки */
+
+.button {
+    padding: 7.5px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    background: #59be9c;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #5FC5A3;
+}
+
+.button-light {
+    color: black;
+    background: white;
+}
+
+.button-light:hover {
+    background: #f9f9f9;
+}
+
+.button-dark {
+    background: #3581a5;
+}
+
+.button-dark:hover {
+    background: #4489AA;
+}
+
+/* шапка */
+
+.header {
+    display: flex;
+    height: 75px;
+    background: #e0f3ed;
+    padding: 0 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /*border: black solid 2px;*/
+    padding: 15px;
+}
+
+.header .container:first-child {
+    width: 300px;
+    margin-right: auto;
+}
+
+.header .container:last-child {
+    width: 300px;
+    justify-content: right;
+    margin-left: auto;
+}
+
+.header .container:nth-child(2) {
+    width: 675px;
+    padding-left: 0;
+    padding-right: 0;
+    /*border: black solid 2px;*/
+    text-align: center;
+}
+
+.header .container a {
+    width: 180px;
+    color: #2D5649;
+    /*border: black solid 2px;*/
+    text-decoration: none;
+}
+
+.header .container a:nth-child(2) {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header .container a:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+/* основные блоки */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 400px;*/
+    width: 100%;
+    /*border: red solid 2px;*/
+    align-items: center;
+}
+
+.block-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: blue solid 2px;*/
+    padding: 15px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/* слоган */
+
+.slogan {
+    background: transparent;
+}
+
+.slogan .block-content {
+    justify-content: center;
+    flex-direction: row;
+    height: 450px;
+    gap: 75px;
+    /*border: black solid 2px;*/
+}
+
+.slogan-bg {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+}
+
+.slogan-container {
+    display: flex;
+    gap: 15px;
+    /*border: black solid 2px;*/
+    flex-direction: column;
+}
+
+.naming-text {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.slogan-container .button-dark {
+    width: 240px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slogan-container .button-dark a {
+    color: white;
+    text-decoration: none;
+}
+
+.slogan-images-container {
+    height: 345px;
+    width: 450px;
+    /*border: black solid 2px;*/
+}
+
+.slogan-images-container img {
+    border-radius: 22.5px;
+    position: absolute;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#slogan-img2 {
+    transform: translate(150px, 135px);
+}
+
+/* новости */
+
+.news {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.news .container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 22.5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.button-label {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-label:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
+                0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.news .container .text-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.news .container img {
+    width: 100%;
+    height: 225px;
+    border-radius: 15px;
+}
+
+/*.news .container p {*/
+/*    font-size: 15px;*/
+/*}*/
+
+.news .container .button-more-info {
+    color: gray;
+    height: 45px;
+    margin-top: auto;
+    /*border: aqua solid 2px;*/
+    align-content: center;
+    overflow: visible;
+}
+
+/* менюшки */
+
+.menu .container {
+    display: flex;
+    gap: 0;
+    height: 400px;
+    border-radius: 22.5px;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    /*border: aqua solid 2px;*/
+    /*text-align: center;*/
+}
+
+.menu .text-container {
+    /*border: aqua solid 2px;*/
+    padding: 22.5px;
+    padding-left: 0;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 22.5px;
+}
+
+.menu img {
+    /*border: aqua solid 2px;*/
+    height: 100%;
+    width: 100%;
+    border-radius: 22.5px;
+}
+
+/* форма регистрации */
+
+.form {
+    background: #e0f3ed;
+}
+
+.form .block-content {
+    flex-direction: row;
+    gap: 30px;
+}
+
+.form-menu {
+    display: flex;
+    flex-direction: column;
+    height: 405px;
+    width: 405px;
+    min-width: 300px;
+    padding: 15px;
+    gap: 12px;
+    border-radius: 22.5px;
+    background: #3581a5;
+    box-sizing: border-box;
+}
+
+.form h4 {
+    color: white;
+}
+
+.form-menu input,
+.form-menu textarea {
+    border: none;
+    border-radius: 12px;
+    padding: 7.5px;
+    background: white;
+}
+
+.form-menu textarea {
+    resize: block;
+    flex: auto;
+}
+
+.form-map {
+    height: 405px;
+    width: 70%;
+    min-width: 300px;
+    position: relative;
+    /*border: black solid 2px;*/
+}
+
+.form-map img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    border-radius: 22.5px;
+    position: absolute;
+    /*border: black solid 2px;*/
+}
+
+.form-map .button {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: calc(100% - 25px);
+    padding: 7.5px;
+}
+
+/* нижняя менюшка контактов */
+
+.bottom {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    color: white;
+    background: #3581a5;
+    padding: 0 30px;
+    gap: 15px;
+    /*border: white solid 2px;*/
+}
+
+.bottom h5:first-child {
+    margin-right: auto;
+    /*border: white solid 2px;*/
+}
+
+.icon-bottom-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /*border: white solid 2px;*/
+    gap: 15px;
+}
+
+#tg-icon {
+    width: 37.5px;
+    height: 37.5px;
+}
+
+#vk-icon {
+    width: 45px;
+    height: 37.5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header .container:nth-child(2) {
+        display: none;
+    }
+    .slogan-images-container {
+        display: none;
+    }
+    .block-content {
+        width: 90%;
+    }
+    .news {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 0;
+    }
+    .block-content {
+        width: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .news .container img {
+        height: 300px;
+    }
+    .menu .block-content .container {
+        flex-direction: column;
+    }
+    .menu .block-content .container .text-container {
+        display: none;
+    }
+    .form .block-content {
+        flex-wrap: wrap;
+    }
+    .form .block-content .form-menu,
+    .form .block-content .form-map {
+        width: 100%;
+    }
+}
