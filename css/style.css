@@ -19,7 +19,7 @@ h3 {
 }
 
 h4 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -32,19 +32,15 @@ h5 {
     font-size: 18px;
 }
 
-input {
-    font-family: inherit;
-}
-
+input,
 textarea {
-    padding: 12px 15px;
     font-family: inherit;
 }
 
 /* кнопочки */
 
 .button {
-    padding: 7.5px;
+    padding: 7px;
     text-align: center;
     color: white;
     border-radius: 12px;
@@ -203,7 +199,7 @@ textarea {
 }
 
 .slogan-container .button-dark {
-    width: 240px;
+    width: 230px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
 }
@@ -220,7 +216,7 @@ textarea {
 }
 
 .slogan-images-container img {
-    border-radius: 22.5px;
+    border-radius: 22px;
     position: absolute;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
@@ -250,7 +246,7 @@ textarea {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border-radius: 22.5px;
+    border-radius: 22px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -297,7 +293,7 @@ textarea {
     display: flex;
     gap: 0;
     height: 400px;
-    border-radius: 22.5px;
+    border-radius: 22px;
     padding: 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -307,21 +303,20 @@ textarea {
 
 .menu .text-container {
     /*border: aqua solid 2px;*/
-    padding: 22.5px;
-    padding-left: 0;
+    padding: 22px 22px 22px 0;
 }
 
 .menu ul {
     display: flex;
     flex-direction: column;
-    gap: 22.5px;
+    gap: 22px;
 }
 
 .menu img {
     /*border: aqua solid 2px;*/
     height: 100%;
     width: 100%;
-    border-radius: 22.5px;
+    border-radius: 22px;
 }
 
 /* форма регистрации */
@@ -343,7 +338,7 @@ textarea {
     min-width: 300px;
     padding: 15px;
     gap: 12px;
-    border-radius: 22.5px;
+    border-radius: 22px;
     background: #3581a5;
     box-sizing: border-box;
 }
@@ -356,7 +351,7 @@ textarea {
 .form-menu textarea {
     border: none;
     border-radius: 12px;
-    padding: 7.5px;
+    padding: 7px;
     background: white;
 }
 
@@ -373,14 +368,22 @@ textarea {
     /*border: black solid 2px;*/
 }
 
-.form-map img {
+#map {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
-    border-radius: 22.5px;
+    border-radius: 22px;
     position: absolute;
     /*border: black solid 2px;*/
+}
+
+#map-hint {
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
 }
 
 .form-map .button {
@@ -392,7 +395,7 @@ textarea {
     transform: translateX(-50%);
     z-index: 1;
     width: calc(100% - 25px);
-    padding: 7.5px;
+    padding: 7px;
 }
 
 /* нижняя менюшка контактов */
@@ -422,13 +425,13 @@ textarea {
 }
 
 #tg-icon {
-    width: 37.5px;
-    height: 37.5px;
+    width: 37px;
+    height: 37px;
 }
 
 #vk-icon {
     width: 45px;
-    height: 37.5px;
+    height: 37px;
 }
 
 @media screen and (max-width: 1600px) {
