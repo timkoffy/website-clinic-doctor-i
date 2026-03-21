@@ -40,6 +40,7 @@ textarea {
 /* кнопочки */
 
 .button {
+    transition: all 0.3s ease;
     padding: 7px;
     text-align: center;
     color: white;
