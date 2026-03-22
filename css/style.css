@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     object-fit: cover;
     object-position: center;
@@ -19,11 +23,11 @@ h3 {
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-p, a, li, .heading, .logo-text, .button, input, textarea {
+p, a, li, .logo-text, .button, input, textarea {
     font-size: 22px;
     text-wrap: wrap;
 }
@@ -43,18 +47,25 @@ textarea {
     transition: all 0.3s ease;
     padding: 7px;
     text-align: center;
-    color: white;
     border-radius: 12px;
-    background: #59be9c;
     cursor: pointer;
 }
 
-.button:hover {
+.button-default {
+    a {
+        color: white;
+    }
+    background: #59be9c;
+}
+
+.button-default:hover {
     background: #5FC5A3;
 }
 
 .button-light {
-    color: black;
+    a {
+        color: black;
+    }
     background: white;
 }
 
@@ -63,6 +74,9 @@ textarea {
 }
 
 .button-dark {
+    a {
+        color: white;
+    }
     background: #3581a5;
 }
 
@@ -70,10 +84,22 @@ textarea {
     background: #4489AA;
 }
 
+.button-label {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-label:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
+                0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
 /* шапка */
 
 .header {
     display: flex;
+    justify-content: space-between;
     height: 75px;
     background: #e0f3ed;
     padding: 0 30px;
@@ -83,44 +109,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 15px;
-    /*border: black solid 2px;*/
     padding: 15px;
-}
-
-.header .container:first-child {
-    width: 300px;
-    margin-right: auto;
-}
-
-.header .container:last-child {
-    width: 300px;
-    justify-content: right;
-    margin-left: auto;
-}
-
-.header .container:nth-child(2) {
-    width: 675px;
-    padding-left: 0;
-    padding-right: 0;
-    /*border: black solid 2px;*/
-    text-align: center;
-}
-
-.header .container a {
-    width: 180px;
-    color: #2D5649;
-    /*border: black solid 2px;*/
-    text-decoration: none;
-}
-
-.header .container a:nth-child(2) {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.header .container a:hover {
-    transition: all 0.3s ease;
-    transform: translateY(-2px);
 }
 
 .logo {
@@ -129,20 +118,30 @@ textarea {
     border-radius: 50%;
 }
 
-.logo-text {
-    font-weight: bold;
+.header__nav {
+    justify-content: space-between;
+    width: 675px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.header__nav a {
+    width: 180px;
+    color: #2D5649;
+}
+
+.header__nav a:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
 }
 
 /* основные блоки */
 
-.main-container {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.heading {
-    font-weight: bold;
 }
 
 .block {
@@ -154,7 +153,7 @@ textarea {
     align-items: center;
 }
 
-.block-content {
+.block__content {
     width: 70%;
     max-width: 1500px;
     display: flex;
@@ -172,12 +171,11 @@ textarea {
     background: transparent;
 }
 
-.slogan .block-content {
+.slogan .block__content {
     justify-content: center;
     flex-direction: row;
     height: 450px;
     gap: 55px;
-/*    border: black solid 2px;*/
 }
 
 .slogan-bg {
@@ -187,36 +185,30 @@ textarea {
     z-index: -1;
 }
 
-.slogan-container {
+.slogan__text-container {
     display: flex;
     gap: 15px;
-    /*border: black solid 2px;*/
     flex-direction: column;
 }
 
-.naming-text {
+#naming-text {
     font-weight: bold;
     white-space: nowrap;
 }
 
-.slogan-container .button-dark {
+.slogan__text-container .button-dark {
     width: 230px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-.slogan-container .button-dark a {
-    color: white;
-    text-decoration: none;
-}
-
-.slogan-images-container {
+.slogan__images-container {
     height: 345px;
     width: 40%;
     /*border: black solid 2px;*/
 }
 
-.slogan-images-container img {
+.slogan__images-container img {
     border-radius: 22px;
     position: absolute;
     width: 300px;
@@ -224,12 +216,12 @@ textarea {
                 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-#slogan-img2 {
+#slogan__img1 {
     right: 17%;
     transform: translateY(135px);
 }
 
-#slogan-img1 {
+#slogan__img2 {
     right: 25%;
 }
 
@@ -253,68 +245,48 @@ textarea {
     padding: 15px;
 }
 
-.button-label {
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.button-label:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
-                0 10px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
-
-.news .container .text-container {
+.news .container p {
     width: 100%;
-    height: fit-content;
+    text-align: left;
 }
 
-.news-img {
+.news__img {
     width: 100%;
     height: 225px;
     border-radius: 15px;
 }
 
-/*.news .container p {*/
-/*    font-size: 15px;*/
+/*.news .container .button-more-info {*/
+/*    color: gray;*/
+/*    height: 45px;*/
+/*    margin-top: auto;*/
+/*    !*border: aqua solid 2px;*!*/
+/*    align-content: center;*/
+/*    overflow: visible;*/
 /*}*/
-
-.news .container .button-more-info {
-    color: gray;
-    height: 45px;
-    margin-top: auto;
-    /*border: aqua solid 2px;*/
-    align-content: center;
-    overflow: visible;
-}
 
 /* менюшки */
 
 .menu .container {
     display: flex;
-    gap: 0;
+    gap: 10px;
     height: 400px;
     border-radius: 22px;
     padding: 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
-    /*border: aqua solid 2px;*/
-    /*text-align: center;*/
 }
 
-.menu .text-container {
-    /*border: aqua solid 2px;*/
-    padding: 22px 22px 22px 0;
-}
-
-.menu ul {
+.menu .container ul {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
 .menu img {
-    /*border: aqua solid 2px;*/
     height: 100%;
     width: 100%;
     border-radius: 22px;
@@ -326,12 +298,12 @@ textarea {
     background: #e0f3ed;
 }
 
-.form .block-content {
+.form .block__content {
     flex-direction: row;
     gap: 30px;
 }
 
-.form-menu {
+.form__menu {
     display: flex;
     flex-direction: column;
     height: 405px;
@@ -344,24 +316,24 @@ textarea {
     box-sizing: border-box;
 }
 
-.form h4 {
+.form__menu h4 {
     color: white;
 }
 
-.form-menu input,
-.form-menu textarea {
+.form__menu input,
+.form__menu textarea {
     border: none;
     border-radius: 12px;
     padding: 7px;
     background: white;
 }
 
-.form-menu textarea {
+.form__menu textarea {
     resize: block;
     flex: auto;
 }
 
-.form-map {
+.form__map {
     height: 405px;
     width: 70%;
     min-width: 300px;
@@ -376,7 +348,6 @@ textarea {
     width: 100%;
     border-radius: 22px;
     position: absolute;
-    /*border: black solid 2px;*/
 }
 
 #map-hint {
@@ -387,7 +358,7 @@ textarea {
     transform: translate(-50%, -100%);
 }
 
-.form-map .button {
+.form__map .button {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -409,19 +380,16 @@ textarea {
     background: #3581a5;
     padding: 0 30px;
     gap: 15px;
-    /*border: white solid 2px;*/
 }
 
 .bottom h5:first-child {
     margin-right: auto;
-    /*border: white solid 2px;*/
 }
 
-.icon-bottom-container {
+.bottom__icon-container {
     display: flex;
     align-items: center;
     height: 100%;
-    /*border: white solid 2px;*/
     gap: 15px;
 }
 
@@ -436,36 +404,35 @@ textarea {
 }
 
 @media screen and (max-width: 1600px) {
-    .block-content {
+    .block__content {
         width: 80%;
     }
-    #slogan-img2 {
+    #slogan__img1 {
         right: 12%;
     }
-
-    #slogan-img1 {
+    #slogan__img2 {
         right: 20%;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .header .container:nth-child(2) {
+    .header__nav {
         display: none;
     }
-    .slogan .block-content {
+    .slogan .block__content {
         justify-content: normal;
     }
-    .slogan-images-container {
+    .slogan__images-container {
         display: none;
     }
-    .block-content {
+    .block__content {
         width: 90%;
     }
     .news {
         flex-direction: column;
     }
-    .news-img {
-        height: 400px;
+    .menu .block__content .container ul li:last-child {
+        display: none;
     }
 }
 
@@ -473,7 +440,7 @@ textarea {
     .header {
         padding: 0;
     }
-    .block-content {
+    .block__content {
         width: 100%;
     }
     h1 {
@@ -482,17 +449,17 @@ textarea {
     h3 {
         font-size: 28px;
     }
-    .menu .block-content .container {
+    .menu .block__content .container {
         flex-direction: column;
     }
-    .menu .block-content .container .text-container {
+    .menu .block__content .container ul {
         display: none;
     }
-    .form .block-content {
+    .form .block__content {
         flex-wrap: wrap;
     }
-    .form .block-content .form-menu,
-    .form .block-content .form-map {
+    .form .block__content .form__menu,
+    .form .block__content .form__map {
         width: 100%;
     }
 }

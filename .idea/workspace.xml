@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156cfbd7-29d4-4e24-99dd-da2e70d3c0e1" name="Changes" comment="add pin-hint on map">
+    <list default="true" id="156cfbd7-29d4-4e24-99dd-da2e70d3c0e1" name="Changes" comment="add transitions for button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,9 @@
       <workItem from="1774036951086" duration="184000" />
       <workItem from="1774037291681" duration="192000" />
       <workItem from="1774104400141" duration="3249000" />
-      <workItem from="1774113226459" duration="336000" />
+      <workItem from="1774113226459" duration="548000" />
+      <workItem from="1774170937642" duration="215000" />
+      <workItem from="1774191078524" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -113,17 +117,37 @@
       <option name="project" value="LOCAL" />
       <updated>1774107637975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add transitions for button">
+      <option name="closed" value="true" />
+      <created>1774113619868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774113619868</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="fix adaptive" />
     <MESSAGE value="add pin-hint on map" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pin-hint on map" />
+    <MESSAGE value="add transitions for button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add transitions for button" />
   </component>
 </project>
