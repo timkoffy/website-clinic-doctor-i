@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156cfbd7-29d4-4e24-99dd-da2e70d3c0e1" name="Changes" comment="refactor class names">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    <list default="true" id="156cfbd7-29d4-4e24-99dd-da2e70d3c0e1" name="Changes" comment="slogan img refactor">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +81,7 @@
       <workItem from="1774104400141" duration="3249000" />
       <workItem from="1774113226459" duration="548000" />
       <workItem from="1774170937642" duration="215000" />
-      <workItem from="1774191078524" duration="5498000" />
+      <workItem from="1774191078524" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -133,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774195587461</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="slogan img refactor">
+      <option name="closed" value="true" />
+      <created>1774196716805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774196716805</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +163,7 @@
     <MESSAGE value="add pin-hint on map" />
     <MESSAGE value="add transitions for button" />
     <MESSAGE value="refactor class names" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor class names" />
+    <MESSAGE value="slogan img refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="slogan img refactor" />
   </component>
 </project>
