@@ -1,3 +1,4 @@
+/* todo: alt text to img */
 * {
     margin: 0;
     font-weight: normal;
@@ -113,6 +114,10 @@ textarea {
 }
 
 .logo {
+    cursor: pointer;
+}
+
+.logo__img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -203,27 +208,51 @@ textarea {
 }
 
 .slogan__images-container {
-    height: 345px;
-    width: 40%;
-    /*border: black solid 2px;*/
+    display: grid;
+    width: 420px;
+    height: 320px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: normal;
 }
 
 .slogan__images-container img {
     border-radius: 22px;
-    position: absolute;
     width: 300px;
+    height: 200px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
                 0 6px 6px rgba(0, 0, 0, 0.1);
-}
-
-#slogan__img1 {
-    right: 17%;
-    transform: translateY(135px);
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 }
 
 #slogan__img2 {
-    right: 25%;
+    transform: translate(120px, 120px);
+    z-index: 1;
 }
+
+/*.slogan__images-container {*/
+/*    height: 345px;*/
+/*    width: 40%;*/
+/*    !*border: black solid 2px;*!*/
+/*}*/
+
+/*.slogan__images-container img {*/
+/*    border-radius: 22px;*/
+/*    position: absolute;*/
+/*    width: 300px;*/
+/*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),*/
+/*                0 6px 6px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*#slogan__img1 {*/
+/*    right: 17%;*/
+/*    transform: translateY(135px);*/
+/*}*/
+
+/*#slogan__img2 {*/
+/*    right: 25%;*/
+/*}*/
 
 /* новости */
 
@@ -279,8 +308,6 @@ textarea {
 
 .menu .container ul {
     width: 100%;
-    max-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -387,6 +414,7 @@ textarea {
 }
 
 .bottom__icon-container {
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: 100%;
@@ -407,11 +435,14 @@ textarea {
     .block__content {
         width: 80%;
     }
+}
+
+@media screen and (max-width: 1330px) {
     #slogan__img1 {
-        right: 12%;
+        transform: translateX(-60px);
     }
     #slogan__img2 {
-        right: 20%;
+        transform: translate(60px, 120px);
     }
 }
 
