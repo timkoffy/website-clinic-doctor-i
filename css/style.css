@@ -151,9 +151,7 @@ textarea {
 .block {
     display: flex;
     flex-direction: column;
-    /*min-height: 400px;*/
     width: 100%;
-    /*border: red solid 2px;*/
     align-items: center;
 }
 
@@ -260,15 +258,6 @@ textarea {
     height: 225px;
     border-radius: 15px;
 }
-
-/*.news .container .button-more-info {*/
-/*    color: gray;*/
-/*    height: 45px;*/
-/*    margin-top: auto;*/
-/*    !*border: aqua solid 2px;*!*/
-/*    align-content: center;*/
-/*    overflow: visible;*/
-/*}*/
 
 /* менюшки */
 
